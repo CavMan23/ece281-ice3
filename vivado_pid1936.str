@@ -1,0 +1,2658 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 1936
+License: Customer
+
+Current time: 	Sun Feb 11 18:14:01 MST 2024
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 767 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	C26Cavan.Cook
+User home directory: C:/Users/Cavan.Cook
+User working directory: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Cavan.Cook/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Cavan.Cook/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Cavan.Cook/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/vivado.log
+Vivado journal file location: 	C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/vivado.jou
+Engine tmp dir: 	C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/.Xil/Vivado-1936-C26-5CG2151B2Y
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 493 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Cavan.Cook\ECE_Code\ece281-ice3\fullAdder.xpr. Version: Vivado v2018.2 
+// [GUI Memory]: 75 MB (+75858kb) [00:00:12]
+// [Engine Memory]: 477 MB (+348224kb) [00:00:12]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 32 MB. Current time: 2/11/24 6:14:03 PM MST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 551 MB (+52608kb) [00:00:17]
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 800.289 ; gain = 79.316 
+// Project name: fullAdder; location: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3; part: xc7a35tcpg236-1
+// [Engine Memory]: 602 MB (+24859kb) [00:00:20]
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, halfAdder_tb(test_bench) (halfAdder_tb.vhd)]", 8); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 7); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11); // B (D, ck)
+// Elapsed time: 21 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1); // B (D, ck)
+// PAPropertyPanels.initPanels (top_basys3.vhd) elapsed time: 0.2s
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("top_basys3.vhd", 139, 310); // ce (w, ck)
+// Elapsed time: 12 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 83, 144); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+// Elapsed time: 54 seconds
+selectCodeEditor("top_basys3_tb.vhd", 257, 166); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 257, 166); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 75, 100); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 287, 162); // ce (w, ck)
+// Elapsed time: 11 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+// Elapsed time: 21 seconds
+selectCodeEditor("top_basys3_tb.vhd", 181, 100); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 44, 142); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 48, 140); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 453, 170); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 451, 160); // ce (w, ck)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 239, 227); // ce (w, ck)
+// [GUI Memory]: 80 MB (+1898kb) [00:07:29]
+// Elapsed time: 71 seconds
+selectCodeEditor("top_basys3_tb.vhd", 62, 66); // ce (w, ck)
+// Elapsed time: 64 seconds
+selectCodeEditor("top_basys3_tb.vhd", 273, 68); // ce (w, ck)
+// Elapsed time: 103 seconds
+selectCodeEditor("top_basys3_tb.vhd", 277, 176); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("top_basys3_tb.vhd", 285, 210); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("top_basys3_tb.vhd", 80, 227); // ce (w, ck)
+// [GUI Memory]: 85 MB (+577kb) [00:11:09]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+// Elapsed time: 61 seconds
+selectCodeEditor("top_basys3.vhd", 261, 150); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 252, 159); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 252, 159); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 268, 174); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 89, 61); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 89, 76); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 93, 94); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 251, 130); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3_tb.vhd", 371, 142); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 499, 104); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 83, 160); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 83, 277); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 423, 218); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 52, 264); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 58, 262); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 407, 194); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("top_basys3_tb.vhd", 83, 208); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 63, 178); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 88, 177); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 72, 179); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 71, 214); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 325, 252); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("top_basys3_tb.vhd", 226, 124); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 220, 126); // ce (w, ck)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 191, 252, false, true, false, false, false); // ce (w, ck) - Control Key
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// HMemoryUtils.trashcanNow. Engine heap size: 630 MB. GUI used memory: 43 MB. Current time: 2/11/24 6:29:54 PM MST
+// Elapsed time: 13 seconds
+setFileChooser("C:/Users/Cavan.Cook/ECE_Code/ece281-ice2/src/hdl/halfAdder.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 25 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse C:/Users/Cavan.Cook/ECE_Code/ece281-ice2/src/hdl/halfAdder.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("top_basys3_tb.vhd", 547, 85); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), halfAdder(halfAdder_arch) (halfAdder.vhd)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [Engine Memory]: 632 MB (+172kb) [00:17:06]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3.vhd", 25, 142); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+// [GUI Memory]: 89 MB (+44kb) [00:17:38]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 83, 234); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 324, 72); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 233, 264, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3.vhd", 469, 190); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 265, 266); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 73, 283); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 396, 165); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 116, 264); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 261, 265); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 464, 226); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 441, 93); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 109, 278); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("top_basys3_tb.vhd", 201, 132); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 168, 128); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 137, 262); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 123, 75); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 150, 76); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 69, 242); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 2, 263); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 191, 268); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 3, 279); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 654, 216); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 69, 213); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 283, 246); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 69, 280); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 69, 310); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("top_basys3_tb.vhd", 314, 213); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("top_basys3_tb.vhd", 79, 111); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 77, 127); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 77, 141); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 375, 164); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 77, 176); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 76, 192); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 502, 309); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 55, 176); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 53, 213); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 463, 173); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 85, 179); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 89, 179); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 84, 214); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 89, 211); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 473, 234); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 109, 210); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 497, 277); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 67, 245); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 301, 118); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 126 seconds
+selectCodeEditor("top_basys3_tb.vhd", 446, 142); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("top_basys3_tb.vhd", 59, 178); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 224, 175); // ce (w, ck)
+// Elapsed time: 50 seconds
+selectCodeEditor("top_basys3_tb.vhd", 469, 216); // ce (w, ck)
+// [GUI Memory]: 94 MB (+671kb) [00:25:53]
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 421, 248); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 195, 164); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 250, 234); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_basys3.vhd", 409, 164, false, true, false, false, false); // ce (w, ck) - Control Key
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 101, 75); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 103, 75); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 303, 112); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 360, 144); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 227, 288); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("top_basys3_tb.vhd", 55, 100); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 51, 109); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 26, 128); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 392, 135); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 205, 80); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("top_basys3.vhd", 249, 114); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3.vhd", 391, 234); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("top_basys3.vhd", 384, 80); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 345, 90); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("top_basys3.vhd", 398, 99); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top_basys3.vhd", 321, 276); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3.vhd", 321, 276, false, true, false, false, false); // ce (w, ck) - Control Key
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 2, true, false); // k (j, ck) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 371, 204, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+// Elapsed time: 79 seconds
+selectCodeEditor("top_basys3_tb.vhd", 111, 125); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 125, 136); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 225, 89); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 220, 93); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 187, 94); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 190, 107); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 399, 181); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 375, 104); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 237, 94); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 424, 134); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 83, 179); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 24, 286, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 12, 182); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3_tb.vhd", 59, 221); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 59, 221); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 50, 56); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 412, 243); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 120, 144); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 85, 163); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 300, 178); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 343, 273); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 55, 165); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 96, 141); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3_tb.vhd", 281, 239); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 183, 95); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 98, 96); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 207, 124); // ce (w, ck)
+// [GUI Memory]: 99 MB (+329kb) [00:34:57]
+selectCodeEditor("top_basys3_tb.vhd", 157, 124); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 138, 117); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("top_basys3_tb.vhd", 41, 142); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 243, 129); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 148, 92); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 343, 206); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("top_basys3_tb.vhd", 257, 79); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 270, 89); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 131, 63); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 120, 73); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 153, 120); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 151, 112); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 151, 112); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 347, 246); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 59, 226); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 17 seconds
+selectCodeEditor("top_basys3.vhd", 52, 234); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3.vhd", 105, 282); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 76, 279); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 276, 141); // ce (w, ck)
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("top_basys3_tb.vhd", 427, 242); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 147, 212); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 259, 195); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 199, 284); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 121, 211); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 121, 211); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 131, 210); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("top_basys3_tb.vhd", 180, 248); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 298, 289); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 343, 209); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 393, 243); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 419, 76); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("top_basys3_tb.vhd", 269, 300); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 109, 296); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 103, 296); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 364, 242); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 249, 90); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 186, 91); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 392, 126); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 310, 94); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 313, 94); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 364, 244); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 2, true, false); // k (j, ck) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 320, 88); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 335, 89); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 317, 95); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 321, 95); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 475, 124); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 278, 91); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 223, 252); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("top_basys3_tb.vhd", 271, 148); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 242, 266); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("top_basys3_tb.vhd", 310, 178); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 289, 155); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 75, 146); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 463, 101); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 459, 108); // ce (w, ck)
+// Elapsed time: 54 seconds
+selectCodeEditor("top_basys3_tb.vhd", 155, 319); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 153, 334); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 444, 312); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 293, 184); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 309, 158); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 333, 290); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 273, 331); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 374, 264); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3_tb.vhd", 266, 276); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 164, 277); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 125, 282); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 249, 284); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 122, 300); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 125, 299); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 271, 296); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 269, 296); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 292, 288); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 450, 264); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("top_basys3_tb.vhd", 239, 200); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("top_basys3_tb.vhd", 269, 200); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 193, 236); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("top_basys3_tb.vhd", 56, 215); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 114, 93); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 441, 211); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 42 MB. Current time: 2/11/24 6:59:59 PM MST
+selectCodeEditor("top_basys3_tb.vhd", 269, 136); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 249, 259); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 387, 256); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("top_basys3_tb.vhd", 88, 90); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 316, 118); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 309, 121); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 187, 248); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 195, 278); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 404, 308); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 218, 204); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 245, 209); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 156, 42); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 161, 38); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 231, 166); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 319, 186); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 82, 230); // ce (w, ck)
+// Elapsed time: 108 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (ck):  Run Simulation : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: LAUNCH_SIM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_simulation 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice2/src/hdl/halfAdder.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity halfAdder INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/halfAdder_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity halfAdder_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot halfAdder_tb_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2018.2 (64-bit)   **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018   **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xsim.dir/halfAdder_tb_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Sun Feb 11 19:03:28 2024... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 855.098 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 50 MB. Current time: 2/11/24 7:03:32 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source halfAdder_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 867.113 ; gain = 12.016 
+// 'd' command handler elapsed time: 19 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 389, 218); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 389, 218, false, true, false, false, false); // ce (w, ck) - Control Key
+// Elapsed time: 28 seconds
+selectCodeEditor("top_basys3_tb.vhd", 172, 202); // ce (w, ck)
+// Elapsed time: 116 seconds
+selectCodeEditor("top_basys3_tb.vhd", 74, 180); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 71, 177); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 73, 216); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 180, 230); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 174, 229); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 119, 198); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 117, 176); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 110, 213); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 241, 279); // ce (w, ck)
+// Elapsed time: 46 seconds
+selectCodeEditor("top_basys3_tb.vhd", 53, 176); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 57, 212); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 361, 266); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 103, 195); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 161, 230); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 138, 180); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 475, 186); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 152, 157); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 263, 138); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // w
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 326, 154); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 326, 154); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("top_basys3_tb.vhd", 327, 91); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 425, 122); // ce (w, ck)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+// Elapsed time: 85 seconds
+selectCodeEditor("top_basys3.vhd", 191, 260); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 196, 267); // ce (w, ck)
+// Elapsed time: 63 seconds
+selectCodeEditor("top_basys3.vhd", 193, 180); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 191, 313); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3.vhd", 164, 280); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 419, 307); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 453, 252); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 473, 195); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 414, 330); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 351, 176); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 157, 208); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 159, 205); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 221, 209); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("top_basys3.vhd", 28, 256); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 9, 304); // ce (w, ck)
+// Elapsed time: 148 seconds
+selectCodeEditor("top_basys3.vhd", 137, 298); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 217, 292); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3.vhd", 389, 316); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 277, 294); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 161, 147); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 157, 160); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 161, 158); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 220, 176); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3.vhd", 384, 269); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 384, 269); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 436, 147); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3.vhd", 355, 283); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 429, 308); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 335, 140); // ce (w, ck)
+// Elapsed time: 76 seconds
+selectCodeEditor("top_basys3_tb.vhd", 407, 207, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 311, 162); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 289, 164); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3_tb.vhd", 159, 212); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 161, 224); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 395, 243); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 38 seconds
+selectCodeEditor("top_basys3_tb.vhd", 379, 153); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 177, 176); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 71, 244); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 64, 335); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 321, 340, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 465, 157); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 435, 168); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 96, 76); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 111, 228); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 68, 75); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 398, 185); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 154, 107); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 279, 124); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 486, 176); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 577, 142); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 495, 222); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 495, 222); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 511, 245); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 285, 317); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 406, 298, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 477, 267); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 399, 288); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 402, 298); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 512, 292); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3_tb.vhd", 239, 174); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3_tb.vhd", 257, 233); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 257, 233); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("top_basys3_tb.vhd", 456, 191); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 472, 113); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 385, 142); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 328, 235, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 255, 210); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 368, 232); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 301, 238, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 469, 284); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 421, 267); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 403, 218); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 623, 204); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 423, 203); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 124, 305); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 144, 64); // ce (w, ck)
+// Elapsed time: 76 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 419, 175); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3.vhd", 290, 263); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 439, 226); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 55, 178); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 485, 305); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 153, 78); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 139, 24); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 170, 76); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 165, 30); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 467, 172); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 208, 73); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 455, 139); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+// [GUI Memory]: 105 MB (+972kb) [01:11:28]
+// Elapsed time: 20 seconds
+selectCodeEditor("top_basys3.vhd", 417, 317); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("top_basys3_tb.vhd", 303, 186); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 313, 181); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 82, 200); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 118, 225); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 83, 190); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 412, 79); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 159, 111); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 160, 126); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 223, 130); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 320, 124); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("top_basys3_tb.vhd", 513, 165); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 655, 172); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 221, 264); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 427, 186); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 480, 175, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 261, 136); // ce (w, ck)
+// Elapsed time: 73 seconds
+selectCodeEditor("top_basys3_tb.vhd", 406, 172); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 458, 161); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3_tb.vhd", 317, 240, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("top_basys3_tb.vhd", 172, 230); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3_tb.vhd", 245, 227); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 135, 259); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 116, 310); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 151, 355); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 117, 312); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 136, 330); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 247, 362); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 311, 195); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3_tb.vhd", 283, 228); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 135, 280); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 288, 334); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 96, 348); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 235, 46); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 238, 57); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 222, 235); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 72, 244); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 234, 258); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 29, 146); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 47, 156); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("top_basys3_tb.vhd", 283, 226); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 137, 242); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 143, 262); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 145, 261); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 192, 267); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 341, 241); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 72, 218); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 79, 208); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 82, 208); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 362, 281); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 64 seconds
+selectCodeEditor("top_basys3_tb.vhd", 229, 144); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 228, 145); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 228, 145); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 35, 139); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 380, 152); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3_tb.vhd", 512, 172); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_basys3_tb.vhd", 103, 182); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 222, 284); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("top_basys3_tb.vhd", 91, 144); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 77, 143); // ce (w, ck)
+// [GUI Memory]: 112 MB (+1189kb) [01:18:54]
+selectCodeEditor("top_basys3_tb.vhd", 75, 154); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 293, 229); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 330, 231); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 32, 248); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 66, 224); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 37, 245); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 351, 207); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 75, 190); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 144, 174); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 126, 215); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 129, 212); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3_tb.vhd", 417, 239); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 1, 178); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 46 MB. Current time: 2/11/24 7:33:35 PM MST
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3_tb.vhd", 86, 208); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 113, 195); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 111, 229); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 478, 222); // ce (w, ck)
+// Elapsed time: 70 seconds
+selectCodeEditor("top_basys3_tb.vhd", 600, 280); // ce (w, ck)
+// Elapsed time: 179 seconds
+selectCodeEditor("top_basys3_tb.vhd", 477, 250); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 469, 246); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("top_basys3_tb.vhd", 580, 228); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 48 MB. Current time: 2/11/24 7:39:00 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source halfAdder_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 874.938 ; gain = 2.648 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 1); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 401, 178); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("top_basys3_tb.vhd", 138, 266); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 148, 265); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 51, 182); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 179, 282); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 141, 267); // ce (w, ck)
+// Elapsed time: 45 seconds
+selectCodeEditor("top_basys3_tb.vhd", 385, 253); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3_tb.vhd", 108, 357); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 109, 352); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("top_basys3_tb.vhd", 117, 158); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("top_basys3_tb.vhd", 127, 246); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 131, 246); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 130, 246); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 105, 58); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 109, 58); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 213, 59); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 208, 244); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 394, 140); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 118, 156); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 103, 164); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 190, 161); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 93, 173); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("top_basys3_tb.vhd", 127, 177); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 289, 128); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("top_basys3_tb.vhd", 128, 298); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 132, 297); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 296, 280); // ce (w, ck)
+// Elapsed time: 101 seconds
+selectCodeEditor("top_basys3_tb.vhd", 267, 134); // ce (w, ck)
+// Elapsed time: 58 seconds
+selectCodeEditor("top_basys3_tb.vhd", 137, 348); // ce (w, ck)
+// Elapsed time: 57 seconds
+selectCodeEditor("top_basys3_tb.vhd", 282, 280); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 31, 287); // ce (w, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("top_basys3_tb.vhd", 152, 308); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 222, 277); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 52 seconds
+selectCodeEditor("top_basys3_tb.vhd", 91, 162); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 141, 150); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 263, 247); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 281, 310); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 297, 323); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 421, 248); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 417, 263); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("top_basys3_tb.vhd", 201, 213); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 201, 213, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3_tb.vhd", 195, 193); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 207, 217); // ce (w, ck)
+// Elapsed time: 73 seconds
+selectCodeEditor("top_basys3_tb.vhd", 461, 248); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("top_basys3_tb.vhd", 201, 246); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 200, 211); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 205, 252); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 209, 244); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 197, 284); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3_tb.vhd", 487, 276); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 48, 298); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 103, 300); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 108, 314); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 77, 335); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 111, 348); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 132, 302); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 131, 334); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 205, 314); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 209, 351); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 317, 312); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 321, 313); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 317, 348); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 324, 348); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 485, 274); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 477, 264); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("top_basys3_tb.vhd", 578, 275); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 51 MB. Current time: 2/11/24 7:53:19 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source halfAdder_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 876.785 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+dismissFileChooser();
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 26 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 137, 220, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("Basys3_Master.xdc", 87, 190); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 7, 84); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 39, 92); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 36, 93); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 9, 114); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 35, 126); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 8, 180); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 35, 194); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 5, 213); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 34, 232); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:26 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source halfAdder_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 876.785 ; gain = 0.000 
+// 'd' command handler elapsed time: 13 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:32 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:32 PM MST
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 54 MB. Current time: 2/11/24 7:55:34 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:34 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:35 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:35 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:36 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:40 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:41 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:42 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:43 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:43 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:45 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:46 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:46 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:46 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:46 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:46 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:46 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 54 MB. Current time: 2/11/24 7:55:47 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:47 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:47 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:47 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 56 MB. Current time: 2/11/24 7:55:47 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:47 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:47 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:48 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 57 MB. Current time: 2/11/24 7:55:48 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 53 MB. Current time: 2/11/24 7:55:48 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:48 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:48 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:55:48 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 56 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - halfAdder_tb", "DesignTask.SIMULATION");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Confirm Close"); // A (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ck):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source halfAdder_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 52 MB. Current time: 2/11/24 7:56:50 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 881.688 ; gain = 0.000 
+// 'd' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // e (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 5, true); // u (O, ck) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, ck)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// Elapsed time: 36 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_inst ; halfAdder(halfAdder_arch) ; VHDL Entity", 1, "halfAdder(halfAdder_arch)", 1, false); // d (O, ck)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_tb ; halfAdder_tb(test_bench) ; VHDL Entity", 0, "VHDL Entity", 2, true); // d (O, ck) - Node
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_inst ; halfAdder(halfAdder_arch) ; VHDL Entity", 1, "VHDL Entity", 2, false); // d (O, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 11, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 57 MB. Current time: 2/11/24 7:58:28 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Tcl Message: source halfAdder_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 883.727 ; gain = 0.000 
+// 'd' command handler elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 6"); // w
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+// PAResourceOtoP.PAViews_OBJECTS: Objects: close view
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_tb ; halfAdder_tb(test_bench) ; VHDL Entity", 0, "halfAdder_tb", 0, true); // d (O, ck) - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_tb ; halfAdder_tb(test_bench) ; VHDL Entity", 0, "halfAdder_tb", 0, true, false, false, false, false, true); // d (O, ck) - Double Click - Node
+// TclEventType: SIMULATION_OPEN_SOURCE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_inst ; halfAdder(halfAdder_arch) ; VHDL Entity", 1, "halfAdder_inst", 0, false); // d (O, ck)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_inst ; halfAdder(halfAdder_arch) ; VHDL Entity", 1, "halfAdder_inst", 0, false); // d (O, ck)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_inst ; halfAdder(halfAdder_arch) ; VHDL Entity", 1, "halfAdder_inst", 0, false, false, false, false, false, true); // d (O, ck) - Double Click
+// TclEventType: SIMULATION_OPEN_SOURCE
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_inst ; halfAdder(halfAdder_arch) ; VHDL Entity", 1, "halfAdder(halfAdder_arch)", 1, false); // d (O, ck)
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "halfAdder_inst ; halfAdder(halfAdder_arch) ; VHDL Entity", 1, "halfAdder(halfAdder_arch)", 1, false, false, false, false, false, true); // d (O, ck) - Double Click
+closeFrame(PAResourceOtoP.PAViews_SCOPE, "Scopes"); // aw (aE, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, halfAdder_tb(test_bench) (halfAdder_tb.vhd)]", 9, true); // B (D, ck) - Node
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/halfAdder_tb.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/halfAdder_tb.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, halfAdder_tb(test_bench) (halfAdder_tb.vhd), halfAdder_inst : halfAdder(halfAdder_arch) (halfAdder.vhd)]", 10, false); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/Cavan.Cook/ECE_Code/ece281-ice2/src/hdl/halfAdder.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 C:/Users/Cavan.Cook/ECE_Code/ece281-ice2/src/hdl/halfAdder.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'halfAdder_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj halfAdder_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity top_basys3_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ea1aea8553474ced85dc86dcdbbeee49 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot halfAdder_tb_behav xil_defaultlib.halfAdder_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "halfAdder_tb_behav -key {Behavioral:sim_1:Functional:halfAdder_tb} -tclbatch {halfAdder_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 60 MB. Current time: 2/11/24 7:59:13 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source halfAdder_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'halfAdder_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 886.617 ; gain = 0.816 
+// 'd' command handler elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+closeFrame(PAResourceOtoP.PAViews_SCOPE, "Scopes"); // aw (aE, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// D (ck): Invalid Top Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // D (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ck):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:  ****** Webtalk v2018.2 (64-bit)   **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018   **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim/xsim.dir/top_basys3_tb_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Sun Feb 11 19:59:36 2024... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 62 MB. Current time: 2/11/24 7:59:39 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 902.871 ; gain = 16.176 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 138, 195); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 8", 3); // k (j, ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 8"); // w
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 304, 217); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 353, 240); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 251, 297); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 40 seconds
+selectCodeEditor("top_basys3.vhd", 165, 313); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 109, 318); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 196, 331); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 227, 330); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 187, 318); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 260, 210); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3.vhd", 421, 216); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 267, 228); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3.vhd", 185, 296); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 160, 195); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 371, 222); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top_basys3.vhd", 403, 276); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 65 MB. Current time: 2/11/24 8:01:49 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 904.207 ; gain = 0.219 
+// 'd' command handler elapsed time: 12 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// TclEventType: SIMULATION_ADD_BREAKPOINT
+// Tcl Message: add_bp {C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd} 92 
+// TclEventType: SIMULATION_DELETE_BREAKPOINT
+// Tcl Message: remove_bps -file {C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd} -line 92 
+// Elapsed time: 18 seconds
+selectCodeEditor("top_basys3_tb.vhd", 105, 124); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("top_basys3_tb.vhd", 200, 108); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity top_basys3_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 67 MB. Current time: 2/11/24 8:02:49 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 904.539 ; gain = 0.332 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 13 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 203, 115); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 287, 138); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3_tb.vhd", 202, 116); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3_tb.vhd", 362, 81); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 362, 81); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 10", 3); // k (j, ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 10"); // w
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 282, 250); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 253, 302); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("top_basys3.vhd", 233, 274); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("top_basys3.vhd", 346, 326); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 346, 326); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 353, 316); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 137, 300); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity top_basys3_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 69 MB. Current time: 2/11/24 8:05:14 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 904.902 ; gain = 0.363 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (ck)
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aE (Q, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 494 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 487, 141); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 393, 173); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 202, 267); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 210, 265); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity top_basys3_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 71 MB. Current time: 2/11/24 8:14:07 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 908.730 ; gain = 0.000 
+// 'd' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 207, 166); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 261, 124); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 87 seconds
+selectCodeEditor("top_basys3.vhd", 334, 72); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3.vhd", 379, 167); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 341, 136); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3.vhd", 317, 126); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3.vhd", 269, 243); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3.vhd", 327, 261); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("top_basys3.vhd", 254, 289); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 359, 266); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 139, 290); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 137, 284); // ce (w, ck)
+// [GUI Memory]: 118 MB (+288kb) [02:03:33]
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3.vhd", 212, 275); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 295, 286); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top_basys3.vhd", 137, 295); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 45 seconds
+selectCodeEditor("top_basys3.vhd", 246, 304); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 12", 3); // k (j, ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 12"); // w
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity top_basys3_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 73 MB. Current time: 2/11/24 8:18:49 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 908.730 ; gain = 0.000 
+// 'd' command handler elapsed time: 11 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 35 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 405, 200); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 427, 228); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("top_basys3_tb.vhd", 509, 280); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 207, 182); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity top_basys3_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 75 MB. Current time: 2/11/24 8:20:17 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 908.730 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 209, 161); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_basys3_tb.vhd", 119, 142); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 125, 144); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity top_basys3_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 77 MB. Current time: 2/11/24 8:20:51 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 908.730 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 3, false); // u (O, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("top_basys3_tb.vhd", 138, 142); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 187, 202); // ce (w, ck)
+// Elapsed time: 86 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 0); // k (j, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 15"); // w
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd), top_basys3_inst : xil_defaultlib.top_basys3]", 10, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3_tb(test_bench) (top_basys3_tb.vhd)]", 9, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (ck):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'top_basys3_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj top_basys3_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/fullAdder.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "top_basys3_tb_behav -key {Behavioral:sim_1:Functional:top_basys3_tb} -tclbatch {top_basys3_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 79 MB. Current time: 2/11/24 8:23:08 PM MST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source top_basys3_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: Failure: bad 000 Time: 10 ns  Iteration: 0  Process: /top_basys3_tb/test_process  File: C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd $finish called at time : 10 ns : File "C:/Users/Cavan.Cook/ECE_Code/ece281-ice3/src/hdl/top_basys3_tb.vhd" Line 92 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_basys3_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 909.918 ; gain = 1.188 
+// 'd' command handler elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 16", 1); // k (j, ck)
+// [GUI Memory]: 124 MB (+223kb) [02:09:24]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 40, 112); // n (o, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 80 MB. Current time: 2/11/24 8:23:15 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 63, 136); // n (o, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 80 MB. Current time: 2/11/24 8:23:17 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 80 MB. Current time: 2/11/24 8:23:17 PM MST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 208, 129); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 80 MB. Current time: 2/11/24 8:23:18 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 81 MB. Current time: 2/11/24 8:23:18 PM MST
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 194, 188); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 80 MB. Current time: 2/11/24 8:23:19 PM MST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 80 MB. Current time: 2/11/24 8:23:20 PM MST
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, w_led[1:0]]", 1, true); // a (s, ck) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, w_led[1:0]]", 1, true); // a (s, ck) - Node
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3_tb.vhd", 2); // k (j, ck)
+selectCodeEditor("top_basys3_tb.vhd", 324, 90); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 344, 223); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3_tb.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 92 seconds
+selectCodeEditor("top_basys3_tb.vhd", 317, 191); // ce (w, ck)
+selectCodeEditor("top_basys3_tb.vhd", 323, 196); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3_tb.vhd", 495, 226); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("top_basys3_tb.vhd", 379, 193); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3_tb.vhd", 378, 236); // ce (w, ck)
+// [GUI Memory]: 130 MB (+86kb) [02:15:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 80 MB. Current time: 2/11/24 8:53:22 PM MST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 5009 ms to process. Increasing delay to 2000 ms.
