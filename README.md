@@ -26,3 +26,7 @@ If any of the `assert` statements fail **with** `severity failure` then GHDL wil
 Assert statements of other severity levels will be reported, but not fail the workflow.
 
 ![Waveform](Waveform.png)
+
+## Documentation
+
+Received help on how to properly add the simulation and source files from C3C Peyton.
